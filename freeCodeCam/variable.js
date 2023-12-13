@@ -68,16 +68,85 @@ console.log(a);
 
 // Un-initialized variables
 
- var a;
- var b;
+
  var c;
+ var d;
+ var e;
+
+console.log(c)
+console.log(d)
+console.log(e)
+//we havn't declare any variable value here. expected output will be "undefined"
 
 // Initializing Variables
 
- var a = 9;
- var b = 8;
- var c = "A string";
+ var c = 9;
+ var d = 8;
+ var e = "A string";
 
- console.log(a)
- console.log(b)
- console.log(c)
+console.log(c)
+console.log(d)
+console.log(e)
+
+
+
+
+
+// Case Sensitivity in Variables=> first letter of the variable has to be small letter
+
+ var newNumberIs = 20;
+
+ 
+
+
+// Basic Math 
+
+// Adding number
+
+var sum = 10 +1;
+console.log(sum)
+
+var a = 10;
+var b = 15;
+var add = a+b;
+console.log(add)
+
+
+
+
+
+// subtracting numbers
+
+var difference = 45 - 15;
+console.log(difference)
+
+var a = 25;
+var b = 10;
+var subtract = a-b;
+console.log(subtract);
+
+
+
+
+// Multiply
+
+var multiplication = 4 * 15;
+console.log(multiplication)
+
+var a = 5;
+var b = 9;
+var Multiply = a*b;
+console.log(Multiply);
+
+
+
+
+// Division
+
+var division = 12 / 3;
+console.log(division)
+
+var a =60;
+var b = 5;
+var quatient = a/b;
+console.log(divide);
