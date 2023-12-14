@@ -22,11 +22,16 @@
  9) Compound Assignment with Augmented (Plus Equal += operator, 
      Minus Equal -= , Multiply Equal *= , dividev Equal /= operator)
 
+ 10)  Declare String Variables
+
+ 11) Escaping Literal Quote  using   \"  before any quote, 
+
 
 
 */
 
 
+// 1) we can use  \" \" to have a quot inside a sentence
 
 
 
@@ -35,9 +40,9 @@
 /*
 Undefined, null, boolean, string, symbol, number, object
 
-Undefined ==> is something that has not been defined
+Undefined ==> is something that has not been defined, it does not exist.
 
-null ==> is nothing, when we set some value to be nothing.
+null ==> is nothing, when we set some value to be nothing, it exist with no associated Value.
 
 boolean  ==> is True  or False
 
@@ -440,3 +445,44 @@ b /=  2;
 
 console.log(a);
 console.log(b);
+
+
+
+
+
+
+
+// Declare String Variables
+
+
+var firstName = "Alan";
+
+var lastName = "Carnes";
+
+console.log(firstName, lastName);
+
+
+var strNum = "45"
+console.log(strNum);
+
+var newStr = 'single quote str';
+console.log(newStr);
+
+
+
+
+// Escaping Literal Quote
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
+
+console.log(myStr)
+
+
+
+
+
+
+
+
+
+
