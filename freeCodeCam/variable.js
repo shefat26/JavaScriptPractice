@@ -26,12 +26,43 @@
 
  11) Escaping Literal Quote  using   \"  before any quote, 
 
+ 12) Quoting String with single Quotes  
+
+ 13) String with Plus Operatior  or concatinate
+
+ 14) Concatinating string winth Plus Equal operator
+
+ 15) Constructing String with Variables
+
+ 16) Appending Variables to String 
 
 
 */
 
 
-// 1) we can use  \" \" to have a quot inside a sentence
+/*
+ 1) we can use  \" \" to have a quot inside a sentence
+
+2) \' we can use single quote to create a string ( ' Name "James" ')
+
+3) \n is used for to create new line space between the  line
+
+4) \\   backslash
+
+5) \r   Carriage return
+
+6)  \t   tab
+
+7) \b  backspace
+
+8) \f  form feed
+
+
+
+*/
+
+
+
 
 
 
@@ -476,6 +507,92 @@ console.log(newStr);
 var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
 
 console.log(myStr)
+
+
+
+
+
+// Quoting String with single Quotes  ( ' Name "James" ')
+
+var myStr = ' <a href="https://i-cam.netlify.app">click</a>'
+
+console.log("\n using single quote:-",myStr);
+
+
+
+//Escaping Sequence
+
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"
+
+console.log(myStr)
+
+
+
+
+
+
+
+
+
+// String with Plus Operatior or concatinate
+
+
+var myStr = "I am  the first. " + "I am the second ";
+
+console.log(myStr)
+
+
+
+
+// Concatinating string winth Plus Equal operator
+
+
+var  myStr = "This is first. "
+
+myStr += "That's last the sentence"
+
+console.log(myStr)
+
+
+
+
+// Constructing String with Variables
+
+
+var myName = "James";
+
+var myStr = "Myname is " + myName + " and I am well"
+
+console.log(myStr)
+
+
+
+
+
+
+// Appending Variables to String 
+
+
+var aStr = " is a good person"
+
+var myStr = "James Watson"
+
+myStr += aStr
+
+console.log(myStr)
+
+
+
+
+// Length of a string
+
+
+
+
+
+
+
+
 
 
 
