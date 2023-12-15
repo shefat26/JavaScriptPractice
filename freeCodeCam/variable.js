@@ -34,7 +34,17 @@
 
  15) Constructing String with Variables
 
- 16) Appending Variables to String 
+ 16) Appending Variables to String  using Plus Equal "+=" operator
+
+ 17) Length of a string
+
+ 18) Bracket Notation to find the first Character in a string
+
+ 19)  String Immutability 
+
+ 20) // Word Blank  (Mad Libs style word game)
+
+
 
 
 */
@@ -570,7 +580,7 @@ console.log(myStr)
 
 
 
-// Appending Variables to String 
+// Appending Variables to String  using Plus Equal "+=" operator
 
 
 var aStr = " is a good person"
@@ -586,11 +596,122 @@ console.log(myStr)
 
 // Length of a string
 
+var firstName = "Oliver Green"
+
+var length = firstName.length
+
+console.log(length);
+
+
+var numLen = "12534";
+
+// var bb = numLength.length
+console.log(numLen.length);
 
 
 
 
 
+
+// Bracket Notation to find the first Character in a string
+
+
+var firstName = "James"
+
+var char = firstName[0]
+console.log(char);      // expected return 'J'
+
+console.log(firstName[3]); // expected return ' e '
+
+
+
+var numLen = "23652"
+
+var newChar = numLen[2];
+
+console.log(newChar);  // expected return  "6"
+
+console.log(numLen[1]); // expected return "3"
+
+
+var lastName = "JWalker"
+
+console.log(lastName.charAt(4)); //expected return "k"
+
+
+
+
+
+// Bracket Notation to find the Nth Character in a string
+
+
+
+var lastName = "Walker"
+
+console.log(lastName[1]); //expected return "a"
+
+console.log(lastName.charAt(4)); //expected return "k"
+
+
+
+
+
+
+// Bracket Notation to find the Nth  to Last Character in a string
+
+var lastName = "WalkerWalker"
+
+console.log(lastName["\n last char",lastName.length-3]); //expected return "k"
+
+console.log(lastName.charAt(length-4));
+
+
+
+// Bracket Notation to find the last Character in a string
+
+var lastName = "Ramy"
+
+console.log(lastName[lastName.length-1]); //expected return "a"
+
+
+var firstName = "Johnson" 
+console.log(firstName.charAt([firstName.length-1])); //expected return "n"
+
+
+// String Immutability 
+
+
+var myStr = "Jello World"
+
+myStr = "Hello World"
+
+console.log(myStr);  //expected return 
+
+
+
+
+
+
+
+// Word Blank  (Mad Libs style word game)
+
+// we will fill out the missing words in this game, like Noun , Adjective, Verb and Adverb and create a sentence
+
+
+
+function blankWord(myNoun, myAdjective, myVerb, myAdverb){
+
+    var result = ""
+
+    result += "The "+myAdjective +" " +  myNoun + " "+ myVerb+ " to the store "+ myAdverb;
+
+    return result 
+
+
+}
+
+console.log(blankWord("dog", "big", "ran", "quickly"));
+console.log(blankWord("bike", "slow", "flew", "slowly"));
 
 
 
