@@ -10,7 +10,7 @@
 
  3) Access array data with index
 
- 4)
+ 4) Manipulate Arrays with push()
 
  5)
 
@@ -90,7 +90,23 @@ console.log("\n", "\n###########################\n")
 
 
 
+// 4) Manipulate Arrays with push()
 
+
+
+var anArray = ["John", "jay", "cat"];
+console.log(anArray);
+
+
+anArray.push("Ron", "Joy");
+console.log(anArray);
+
+
+var anArray = [["James", 23], ["Dog", 3]];
+console.log(anArray)
+
+anArray.push(["bird",1])
+console.log(anArray);
 
 
 
