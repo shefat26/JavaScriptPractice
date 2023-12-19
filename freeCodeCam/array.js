@@ -415,7 +415,36 @@ console.log(checkGuest3);
 
 
 
-console.log("\n#####################\n")
+
+
+
+
+
+
+
+
+// Manipulate Arrays with forEach() by Naveen
+
+
+
+let n = [1,2,3,4,5]
+
+n.forEach((e)=>{
+
+  console.log(e);
+
+})
+
+
+n.forEach((e)=>{
+
+  console.log(e*2);
+
+})
+
+
+
+console.log("\n########## Array Part-1 completed by automation lab ###########\n")
 
 
 
