@@ -15,13 +15,13 @@ Array Methods
 
  5) .some()  method
 
- 6) .FIND()  METHOD
+ 6) .find()  METHOD
 
+ 7) .indexOf() Method
 
+ 8) .lastIndexOf() Method
 
-
-
-
+ 9) .reverse() method
 
 
 
@@ -549,7 +549,131 @@ console.log("###################\n\n")
 
 
 
-console.log("######### .find() ##########\n")
+console.log("######### .indexOf() ##########\n")
+
+
+
+
+
+
+
+// .indexOf()  method
+
+// We will find the index of array element using .indexOf() .
+// if we don't have the element in the array, it will return "-1"
+
+
+
+// EXAMPLE:-  1  
+let frut = ["apple", "banana", "mango", "pear"];
+
+let newFrut = frut.indexOf("pear");
+console.log(newFrut)
+
+
+// EXAMPLE:- 2
+
+let frut1 = ["apple", "banana", "mango", "pear"];
+
+//we will receive "-1", because we don't have the element in the arr
+let newFrut1 = frut1.indexOf("orange");
+console.log(newFrut1)
+
+
+// EXAMPLE:- 3
+let count = [1, 2, 3, 4, 5]
+
+let newCount = count.indexOf(5);
+console.log(newCount)
+
+
+
+
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+console.log("######### .lastIndexOf() ##########\n")
+
+
+
+
+
+
+// .lastIndexOf()  
+// we can findthe last index of the same array element from the array
+
+
+
+//Example:-1
+
+// find the lastIndexOf array element .
+let count1 = [1, 2, 3, 4, 5, 4,7]
+
+let newCount1 = count1.lastIndexOf(4);
+console.log(newCount1)
+
+
+
+//Example:-2
+
+let letter = [ "a", "a", "b", "r","t","y","s"]
+
+let newLetter = letter.lastIndexOf("a");
+console.log(newLetter)
+
+
+
+
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+console.log("######### .reverse() ##########\n")
+
+
+
+// .reverse() method
+// .reverse() will return array element order from last to fast
+
+
+//Example:-  1
+let rev = ["apple", "banana", "mango", "pear"];
+
+let newRev = rev.reverse()
+console.log(newRev);
+
+
+
+
+
+//Example:-  2
+
+let order = [1, 2, 3, 4, 5, 6]
+
+let newOrder = order.reverse()
+console.log(newOrder)
+
+
+
+
+
 
 
 
