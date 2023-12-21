@@ -11,6 +11,13 @@ Array Methods
 
  3) .reduce() method
 
+ 4) .every() method
+
+ 5) .some()  method
+
+ 6) .FIND()  METHOD
+
+
 
 
 
@@ -30,15 +37,24 @@ Array Methods
 
 
 
+console.log("########  .map() #######\n")
+
+
 
 // .map() 
 // .map() will alway return the new array
+
 
  let numbers =[ 1, 2, 3]
 
  let doubleNum = numbers.map((e) => e*2);
 console.log(doubleNum);
 
+
+
+
+
+// EXAMPLE:- 2
 
 // Fahrenheit to Celsius using  .map()
 //Forfula: (F-32)*(5/9)
@@ -60,8 +76,85 @@ console.log(celTem)
 
 
 
+
+
+// EXAMPLE:-3
+
+let aNum = [1, 2, 3, 4, 5]
+
+let newNum = aNum.map(multiply)
+
+   function multiply(value, index, arr){
+
+    // // 1*[0], 2*[1], 3*[2], 4*[3], 5*[4] = [0,2,6, 12,20]
+    return value*index; 
+
+}
+
+console.log(newNum);
+
+
+
+// EXAMPLE:-4
+
+
+let product = [
+
+    {
+        name:'laptop',
+        price:1000,
+        count: 5
+    },
+
+    {
+        name:'desktop',
+        price:1500,
+        count: 2
+    },
+
+    {
+        name:'phone',
+        price:500,
+        count: 10
+    }
+
+]
+
+
+// what's the total product price and count?
+
+
+let totalProductValue = product.map(item => item.price*item.count);
+
+console.log(totalProductValue);
+
+
+
+
+
+// EXAMPLE:-5
+
+
+//convert array of string to number
+
+
+let str = [ '1','2', '3', '4', '5']
+
+let strNum = str.map(Number)
+console.log(strNum);
+
+
+
+
 console.log("\n###################")
-console.log("#####################\n")
+console.log("#####################")
+console.log("#####################\n\n")
+console.log("########  .filter() #######\n")
+
+
+
+
+
 
 
 /*
@@ -69,6 +162,9 @@ console.log("#####################\n")
 //.filter() will return the new array based on the .filter() condition
 
 */
+
+
+// EXAMPLE:-1
 
 // find the even number from the array using .filter()
 
@@ -80,6 +176,10 @@ console.log(evenNum)
 
 
 
+
+
+// EXAMPLE:-2
+
 // find the odd number from the array using .filter()
 
 
@@ -88,6 +188,12 @@ let num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let oddNum = num.filter((n)=> n % 3 === 0);
 console.log(oddNum)
 
+
+
+
+
+
+// EXAMPLE:-3
 
 // find the similar word from the array using .filter()
 
@@ -103,6 +209,15 @@ let similarWord = word.filter((n)=>{
 console.log(similarWord)
 
 
+
+
+
+
+
+
+//// EXAMPLE:-4 of .filter()
+
+
 let word1 = ["add", "subtract", "plus", "minus", "add", "plus"]
 
 let similarWord1 = word.filter((n)=> n === "plus");
@@ -110,7 +225,9 @@ console.log(similarWord1)
 
 
 
-// third example 
+
+
+// // EXAMPLE:-5
 // find the object from the array
 
 
@@ -138,7 +255,8 @@ console.log(femaleEmpOver30);
 
 
 console.log("\n###################")
-console.log("###################\n")
+console.log("###################\n\n")
+console.log("######### .reduce()  ##########\n")
 
 
 
@@ -152,8 +270,9 @@ console.log("###################\n")
 // .reduce() will return one number after accumulating the array element
 
 
+// EXAMPLE:-1
 
-// accumulate the array using .reduce() 
+// accumulate / add the array using .reduce() 
 
 let numb = [1, 2, 3, 4, 5];
 
@@ -168,6 +287,9 @@ let sum = numb.reduce((accu,num)=> accu + num, 0);
 console.log(sum);
 
 
+
+
+//// EXAMPLE:-2   of  .reduce()
 
 // find the max num from the array
 
@@ -203,6 +325,11 @@ console.log(maxNum);
 
 
 
+
+
+
+// // EXAMPLE:-3    of reduce()
+
 /*
  let say we have a Shopping cart, and there are few items in the cart.
   also product name and the price.
@@ -234,6 +361,196 @@ let totalPrice = cartItems.reduce((cost, item) =>
 */
    cost + item.price, 0); // here 0th index the initial value
 
-   console.log(totalPrice);
+console.log(totalPrice);
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+
+
+
+console.log("########## .evry()  #########\n")
+
+
+
+// .every()  method
+
+// check every element in the arra pass for specific condition.
+// return "True" if all the elements of the array iterable are "True"
+
+
+
+// EXAMPLE:- 1
+let len = [1, 2, 3, 4, 5];
+
+
+// Here we are saying every element in the "len1" array has to be less than 10.
+// if the element are not less that "10", it will return  "false"
+let flag = len.every((e) => e < 10);
+console.log(flag);
+
+
+
+
+// Example:- 2   .every()
+let len1 = [1, 2, 3, 4, 5, 15];
+
+
+// Every element in the "len1" array has to be less than 10
+let flag1 = len1.every((e) => e < 10);
+console.log(flag1);
+
+
+
+
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+console.log("######### .some() ##########\n")
+
+
+
+// .some()
+// in .some(), condition is atleast one element passes the condition
+// if the condition is true, it will return "true"
+// if the condition is false, it will return "false"
+
+
+let otherNum = [1, 2, 3, 4, 5, 15];
+
+let newSome = otherNum.some((e) => e % 2 === 0);
+
+console.log(newSome);
+
+
+
+
+// EXAMPLE:- 2
+
+let otherNum1 = [1, 2, 3, 4, 5, 15];
+
+let newSome1 = otherNum1.some((e) => e > 20);
+
+console.log(newSome1);
+
+
+
+
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+console.log("######### .find() ##########\n")
+
+
+
+
+
+//.find()
+
+/* find the first element of the array that satisfy the specific condition
+ doesn't matter what index is the first element
+=> if the the 1st element of the array meet the condition, it will
+  return that element and brek from there. it will not go to any 
+  other element in the array.
+
+/*/
+
+
+
+let total = [1, 2, 3, 7, 9]
+
+//here  3%3===0 , we found it in index [2] and return the element 3 .
+let newTotal = total.find((e) => e % 3 === 0);
+console.log(newTotal);
+
+
+
+
+
+//EXAMPLE:- 2
+// find the even number
+let total1 = [1, 3, 5, 11, 7, 9, 4]
+
+//here  2%4===0 , we found it in index [6] and return the element 4 .
+let newTotal1 = total1.find((e) => e % 2 === 0);
+console.log(newTotal1);
+
+
+
+
+
+
+//EXAMPLE:- 3
+//find the odd number
+let total2 = [1, 5, 9, 11, 3]
+
+//here condition is matching the 
+let newTotal2 = total2.find((e) => e % 3 ===0 );
+console.log(newTotal2);
+
+
+
+
+//EXAMPLE:- 4
+//find the even number number
+let total3 = [1, 5, 9, 11, 3]
+
+//here condition is not matching the, so the out put will be undefined
+let newTotal3 = total3.find((e) => e % 2 ===0 );
+console.log(newTotal3);
+
+
+
+
+//EXAMPLE:- 5
+//find the word "book"
+let word2 = ["apple", "orange", "book" , "note book"]
+
+//here condition is not matching the 
+let newWord = word2.find((e) => e === "book" );
+console.log(newWord);
+
+
+
+
+
+
+
+
+console.log("\n###################")
+console.log("###################")
+console.log("###################\n\n")
+
+
+
+console.log("######### .find() ##########\n")
+
+
 
 
