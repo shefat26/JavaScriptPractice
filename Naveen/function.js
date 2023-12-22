@@ -18,6 +18,7 @@
 
  7) Annoynomus function
 
+ 8) Recursive function 
 
 
 
@@ -130,8 +131,15 @@ console.log(squarNum)
 
 
 
+console.log("\n######### Recursive function ##########")
+console.log("########### Recursive function ##########\n")
 
 
+
+
+
+//8) Recursive function 
+// this function will call itself during the execution
 
 
 
