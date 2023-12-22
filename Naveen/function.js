@@ -184,6 +184,7 @@ console.log("########### Higher-Order function ##########\n")
 // it means whwn a function takes one or more argument as a function()
 
 
+// Example:-1 
  function add(a, b){
 
     return a + b ;
@@ -199,6 +200,25 @@ console.log("########### Higher-Order function ##########\n")
  let s = operate(add, 4, 5);
 
  console.log(s);
+
+
+
+// Example:-2
+ function multiplication(a, b){
+
+    return a * b ;
+
+ }
+
+ function operate(myFunct, a, b){
+
+    return myFunct(a, b);
+
+ }
+
+ let x = operate(multiplication, 3, 5);
+
+ console.log(x);
 
 
 
