@@ -20,6 +20,7 @@
 
  8) Recursive function 
 
+ 9. Higher-Order Function()
 
 
 
@@ -142,12 +143,62 @@ console.log("########### Recursive function ##########\n")
 // this function will call itself during the execution
 
 
+function factorial(n){
+
+    if(n === 0 || n ===1){
+
+        return 1;
+
+    }
+    else{
+
+    //HERE (n-1) means decreasing n, (4-1)=>3, (3-1)=>2,(2-1)=>1,(1-1)=>0
+    //factorial of 4 :-  4*3*2*1 = 24
+        return n*factorial(n-1);
+
+    }
+
+}
+
+
+
+// factorial of 4 :-  4*3*2*1 = 24
+let aFactorial = factorial(4)
+
+console.log(aFactorial)
+
+console.log(factorial(5)) // factorial of 5:-  5*4*3*2*1 = 120
 
 
 
 
 
 
+
+console.log("\n######### Higher-Order function ##########")
+console.log("########### Higher-Order function ##########\n")
+
+
+
+// 9. Higher-Order Function()
+// it means whwn a function takes one or more argument as a function()
+
+
+ function add(a, b){
+
+    return a + b ;
+
+ }
+
+ function operate(myFunct, a, b){
+
+    return myFunct(a, b);
+
+ }
+
+ let s = operate(add, 4, 5);
+
+ console.log(s);
 
 
 
