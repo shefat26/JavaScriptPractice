@@ -5,6 +5,12 @@
 
 2. Constructor function
 
+3. Class Style 
+
+4. object.create()  method: with some proto type
+
+5. Using Factory Function to create object
+
 
 
 */ 
@@ -25,10 +31,13 @@ console.log(user.name)
 console.log(user.age)
 
 
-console.log("\n###########\n")
+console.log("\n##### ==== Constructor Function ==== ######\n")
+
+
 
 
 //2. Using Constructor function
+
 
 function Car(brand,model,price){
 
@@ -49,7 +58,7 @@ console.log(c2.brand, c2.model)
 
 
 
-//Example:2 Constructopr function
+//Example: Constructopr function
 
 function Food(breakfast, lunch, dinner){
 
@@ -64,6 +73,7 @@ function Food(breakfast, lunch, dinner){
 
 let item = new Food("muffin" , "Pizza" , 5);
 
+// accessing constructor parameter value
 console.log(item.breakfast+ " " + item.lunch + " " + item.dinner);
 
 
@@ -79,10 +89,108 @@ console.log("\n###########\n")
 
 
 
+// Class Style 
+// creating object with the help of class
+
+class Customer{
+
+    constructor(name, product){
+
+        //initializing parameter inside constructor
+        this.name = name;             // instance variable
+        this.product = product;       // instance variable
+
+    }
+
+
+    //adding method inside the class
+
+    addToCart(){
+
+        console.log(`${this.product} added to cart`);
+
+    }
+
+}
+
+
+// Instance/Object of the class 
+
+let custom1 = new Customer("sifat", "MackBook pro")
+
+console.log(custom1.name);
+console.log(custom1.name);
+custom1.addToCart()
+
+
+
+console.log("\n########### ##############\n")
 
 
 
 
+//4. object.create()  method: with some proto type
+
+
+let employeeProtoType = {
+
+    //naming the function to printInfo
+    printInfo:function(){
+
+        console.log(`hello, emp name is ${this.name}`)
+
+    }
+
+}
+
+
+// it will create an object
+let e1 = Object.create(employeeProtoType);
+
+// provided this.name variable value "Tom"
+e1.name = "Tom";
+
+//call the printInfo function
+e1.printInfo();
+
+
+
+console.log("\n########## Factory Fuction ###########\n")
+
+
+
+//5. Using Factory Function to create an object, it will return an object.
+
+function createDepartment(deptName, hod){
+
+
+    // this return will return the object
+    return{
+        deptName:deptName,
+        hod:hod,
+
+        getDepartmentInfo:function(){
+
+            console.log(`hello, dept name is${this.deptName} and hod is ${this.hod}`)
+
+        }
+    }
+}
+
+// passing the deptName and hod value
+let dept1 = createDepartment("Physics", "James Watson")
+let dept2 = createDepartment("Maths", "Ali Adams")
+
+//printing return object
+console.log(dept1, "\n");
+
+// call the getDepartmentInfo function inside the return obj
+dept1.getDepartmentInfo();
+dept2.getDepartmentInfo()
+
+//accessing the return object value
+
+console.log(dept1.deptName, dept1.hod);
 
 
 
