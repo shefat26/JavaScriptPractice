@@ -35,6 +35,7 @@ console.log(newSquar);
 
 
 
+
 //we can also have parenthesis with single parameter arrow function
 let aSquar = (num) => num*num;
 let newAsquar = squar(3);
