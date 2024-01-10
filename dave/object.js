@@ -155,3 +155,82 @@ tesla.engine = function(){
 console.log(tesla.engine())
 
 
+
+
+
+
+
+//Example:-3
+//
+
+const band = {
+
+    vocals: "Robert Plant",
+    guiter: "Jimmy Page",
+    bass: "John Paul Jones",
+    drums: "John Boham"
+
+};
+
+console.log(Object.keys(band));
+console.log(Object.values(band));
+
+console.log("\n")
+
+// Using for in loop to loop through an object
+
+for(let job in band){
+
+ //accessing band object property value, 
+ //Here "job" is the "keys" in obj
+    console.log(band[job]);
+
+
+}
+
+
+for(let job in band){
+
+
+     //accessing band object "jobs" position & property "value" position, 
+     console.log(`on ${job}, it's ${band[job]}`);
+}
+
+
+
+// adding property in "band" obj
+band.keyboard = "Piano";
+console.log(band)
+
+
+// adding method
+
+band.sound = function(){
+
+      return "Hooorrreeee"
+}
+
+console.log(band);
+console.log(band.sound());
+
+
+// Delete obj property from "band" obj
+
+delete band.drums;
+
+//this line will return boolean property.
+console.log(band.hasOwnProperty("drums"));
+//console.log(band);
+
+
+
+
+
+
+
+
+
+
+
+
+
