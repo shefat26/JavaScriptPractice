@@ -4,6 +4,7 @@
  
  1. Object with nested obj, Array and different data type
 
+ 2. Object.Create()
 
 */
 
@@ -69,13 +70,46 @@ const add = (a,b) =>  {
 
 console.log(add(5,8));
 
+console.log("\n\n")
 
 
 
+// object.create()
+const vehicle = {
+
+    wheels: 4,
+    engine: function(){
+
+        return "Vrroooom!";
+
+    }
+
+}
+
+
+// we are using generic obj "vehicle" as a constructor for truck obj
+const truck = Object.create(vehicle)
+
+truck.doors = 2;
+console.log(truck);
+
+//Inheriting vehicle obj property value
+console.log(truck.wheels);    
+console.log(truck.engine());
 
 
 
+// we are using generic obj "vehicle" as a constructor for truck obj
+const car = Object.create(vehicle);
+car.doors = 4;
+car.engine = function(){
+
+    return "Whooooosh!";
+
+};
 
 
+console.log(car);
 
-
+console.log(car.engine());
+console.log(car.wheels);
