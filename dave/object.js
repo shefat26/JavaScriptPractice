@@ -225,8 +225,33 @@ console.log(band.hasOwnProperty("drums"));
 
 
 
+//Example:-4
+
+/*
+ Destructuring  obj property
+
+*/
+
+const music = {
+
+    vocals: "Robert Plant",
+    guiter: "Jimmy Page",
+    bass: "John Paul Jones",
+    drums: "John Boham"
+
+};
+
+/* Here we are replacing key "guiter" with "myVariable" and 
+  we will console log "myVariable" instead of "musick.guiter" 
+  to get the "guiter" key value */
+const {guiter: myVariable} = music;
+
+// expected output 'Robert Plant'
+console.log(myVariable)
 
 
+const {drums:myDrums } = music;
+console.log(myDrums);
 
 
 
