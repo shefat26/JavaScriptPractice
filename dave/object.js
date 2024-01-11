@@ -6,6 +6,12 @@
 
  2. Object.Create()
 
+ 
+
+ 4. 
+   -> Destructuring  obj property
+   -> Using for in loop to loop through an object
+   -> Desctructuring object as parameter in function
 */
 
 
@@ -222,7 +228,7 @@ delete band.drums;
 console.log(band.hasOwnProperty("drums"));
 //console.log(band);
 
-
+console.log("\n########\n")
 
 
 //Example:-4
@@ -250,13 +256,21 @@ const {guiter: myVariable} = music;
 console.log(myVariable)
 
 
-const {drums:myDrums } = music;
+const {drums:myDrums, bass: myBass } = music;
 console.log(myDrums);
+console.log(myBass);
 
 
+/*
+ Desctructuring object as parameter in function
+*/
 
+function signs({vocals}){
 
+    return `${vocals} signs`
+}
 
+console.log(signs)
 
 
 
