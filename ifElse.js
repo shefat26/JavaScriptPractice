@@ -54,6 +54,35 @@ console.log(numbers);
 
 
 
+//Ternary or conditional operator
+
+function compare(a, b) {
+  
+    return  a >= b ? "First one is greater" : "Second one is greater";
+  
+    
+  }
+  
+  console.log(compare(5, 5));
+  
+  
+
+
+  //
+  function compare2(a, b) {
+    
+    let c = a >= b && b<= a ? "First one is greater" : "Second one is greater";
+  
+    return c;
+  }
+  
+  console.log(compare2(5, 5));
+  
+
+
+
+
+  
 
 
 
