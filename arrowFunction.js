@@ -122,22 +122,74 @@ console.log("\n###########\n")
 
 console.log()
 
+
+
+
+
 // filter()
 
+// let canDrink = [] ;
+
+// for(let i = 0; i < ages.length; i++){
+
+//     if(ages[i] >= 21){
+
+//         canDrink.push(ages[i]);
+
+//     }
+
+// }
+
+//console.log(canDrink)
 
 
-let canDrink = [] ;
 
-for(let i = 0; i < ages.length; i++){
+// filter()
 
-    if(ages[i] >= 21){
+const canDrink = ages.filter(function(param){
 
-        canDrink.push(ages[i]);
+    if(param>= 21){
+
+        return true ;
 
     }
 
-}
+})
 
-console.log(canDrink)
+//console.log(canDrink)
+
+
+
+// filter() using arrow function
+
+const drinkAge = ages.filter((age) => age >= 21) 
+
+console.log(drinkAge)
+
+
+
+// filter() retail companies
+
+let retail = companies.filter(function(company){
+
+    if(company.category === "Retail"){
+
+        return true ;
+
+    }
+
+})
+console.log(retail);
+
+
+
+let company = companies.filter((store) => store.category === "Auto" )
+
+console.log(company);
+
+// map()
+
+
+
 
 
