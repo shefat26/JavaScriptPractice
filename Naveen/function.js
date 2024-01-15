@@ -227,5 +227,56 @@ console.log("########### Higher-Order function ##########\n")
 
 
 
+ //Example-4
+// Anonymous Functions
+// Anonymous Functions used in the object property
+
+const  multiply = function (a,b){
+
+    return a*b ;
+
+}
+
+console.log(multiply(4,6));
+
+
+
+
+// Anonymous Function in Object
+
+const obj = {
+
+    name : "Anonymous Function",
+    call: function(){
+
+        return "hello"
+    },
+
+    id: 43452,
+    badge: "Fourth rank"
+
+}
+
+//obj.call()
+console.log(obj.call())
+console.log(obj.badge)
+
+
+
+
+//Example :-5
+// Arrow function
+
+const toProperCase = (name) => {
+
+    return name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
+
+}
+
+console.log(toProperCase("joHNy awake"));
+
+
+
+
 
 
