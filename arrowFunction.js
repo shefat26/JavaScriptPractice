@@ -31,6 +31,46 @@ console.log(add(5,9));
 
 
 
+
+// multiply
+
+let multiply = (a,b)=>{
+
+    return a*b;
+
+}
+
+console.log(multiply(6,7))
+
+
+
+//
+
+let arr = [10,12,15,13,14,11, 17, 19]
+
+let a = []
+let compare = (num)=>{
+
+   
+
+    for (let i = 0; i< arr.length; i++){
+
+        if(num[i] >= 13){
+
+            return a.push.num[i];
+        }
+    }
+}
+
+console.log(compare(arr))
+
+
+
+
+
+
+
+
 // cons
 
 const greater = (a,b) => {
@@ -183,9 +223,14 @@ console.log(retail);
 
 
 
+// filter() using arrow function
+
 let company = companies.filter((store) => store.category === "Auto" )
 
 console.log(company);
+
+
+
 
 // map()
 
