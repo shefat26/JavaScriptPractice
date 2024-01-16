@@ -213,3 +213,10 @@ let maxNum = (a, b, c) =>{
 console.log(maxNum(10,20,30))
 
 
+
+
+
+
+
+
+
