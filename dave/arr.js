@@ -87,6 +87,29 @@ console.log(aStr);
 
 
 
+// The concat() method
+// the concat method joined two different into one Array
+
+let myArrayA = ["1", "2", "3", "4"];
+
+let myArrayB = ["E","F","G","H"];
+
+//let newArray = myArrayA.concat(myArrayB);
+
+
+// We can also use spread operator for concatination.
+let newArray = [...myArrayA, ...myArrayB];
+
+console.log(newArray);
+
+
+
+
+
+// Nested Array/ Multidimentional Array
+
+
+
 
 
 
