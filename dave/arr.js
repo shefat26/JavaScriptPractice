@@ -1,11 +1,23 @@
 
 /*
+  push() 
+  unshift()
+  pop()
+  shift()
 
  1 slice()
 
  2 reverse() 
 
  3 join()
+
+ 4 The concat() method
+
+ 5 reverse()
+
+ 6  split()
+
+ 7  concat()
 
 */
 // Arrays
@@ -18,20 +30,20 @@
  console.log(myArr[myArr.length-1]);
  console.log(myArr.length)
 
- // add element at the end of the Array
+ // add element at the end of the Array using push()
  myArr.push("school", 20);
  console.log(myArr);
 
- // add element at the begining of the Array
+ // add element at the begining of the Array using unshift()
  myArr.unshift(77)
  console.log(myArr) 
 
 
- //Remove last element from Arr
+ //Remove last element from Arr using pop()
  myArr.pop();
  console.log(myArr);
 
- //Remove first element from Arr
+ //Remove first element from Arr using  shift()
  myArr.shift();
  console.log(myArr);
 
@@ -111,24 +123,94 @@ console.log(newArray);
 
 
 
+// Naveen array practice
+
+
+// 1. splice()
+
+
+let animals = ["dog", "cat", "bird", "fish"]
+
+// add "Linon" at index 1 & remove 0 element 
+animals.splice(1,0,"Lion")
+console.log(animals)
+
+
+animals.splice(3,1,"Zebra")
+console.log(animals)
+
+
+animals.splice(5,0,"PIG")
+console.log(animals)
+
+
+animals.splice(3,2,"Dog")
+console.log(animals)
 
 
 
+// slice()
+//
+
+let num = [1,2,3,4,5,6]
+
+// here it will start to slice the array from index[1] and stop at index[3], index[4] will be excluded
+let newNum = num.slice(1,4);
+
+console.log(newNum);
+
+// 
+function sliceOut(a){
+
+    return a.slice(1,4);
+
+}
+
+console.log(sliceOut(num));
+
+
+// concat()
+
+
+let fruit = ["apple", "banana", "orange"];
+let num1 = [1,2,3,4];
+
+// let mix = fruit.concat(num1);
+// console.log(nix)
+
+
+function mix(a,b){
+
+   let mix = a.concat(b);
+
+   return mix
+}
+
+console.log(mix(fruit, num1));
 
 
 
+// indexOf()
+
+let color = ["red", "green", "blue", "yellow", "red", "orange"]
+
+let newColor = color.indexOf("blue");
+
+console.log(newColor);
+
+// THIS index will give us -1  because we don't have the data in the array
+let findName = color.indexOf("naveen");
+console.log(findName);
 
 
 
+// Find the second red index num
 
+//let second = color.indexOf("red", 1);
 
-
-
-
-
-
-
-
+//
+let second = color.indexOf("red", color.indexOf("red")+1);
+console.log(second);
 
 
 
