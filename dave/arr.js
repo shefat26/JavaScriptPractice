@@ -269,6 +269,30 @@ let n = [1,2,3,4,5,6,7];
 
 
 
+// map()
+
+ let numbers = [1,2,3];
+
+ let doubleNumbers = numbers.map((e) => e * 2);
+ console.log(doubleNumbers);
+
+
+
+// F -> C
+//(F-32) * (5/9)
+
+let fahTem = [32,68,86,104,212];
+
+function fahToCel(fah){
+
+  return (fah - 32) * (5/9);
+
+}
+
+let celTemp = fahTem.map(fahToCel);
+console.log(celTemp);
+
+
 
 
 
