@@ -1,6 +1,6 @@
 
 /*
-  push() 
+   push() 
   unshift()
   pop()
   shift()
@@ -8,6 +8,7 @@
 
   includes()
 
+ by Dave
 
  1 slice()
 
@@ -23,33 +24,52 @@
 
  7  concat()
 
+
+ By Naveen  Array Methods
+
+  1 Splice()
+  2 slice()
+  3 concat()
+  4 indexOf()
+  5 includes()
+  6 forEach()
+  7 map()
+
+  8. every()
+  9. some()
+  10. find()
+  11. indexOf()
+  12. lastIndexOf()
+  13. reverse()
+  14. sort() 
+
 */
 // Arrays
 
 
  const myArr = ["dave", 45, 33, true, false, 5, "Work", "house"];
 
- console.log(myArr)
- console.log(myArr[3]);
- console.log(myArr[myArr.length-1]);
- console.log(myArr.length)
+//  console.log(myArr)
+//  console.log(myArr[3]);
+//  console.log(myArr[myArr.length-1]);
+//  console.log(myArr.length)
 
  // add element at the end of the Array using push()
  myArr.push("school", 20);
- console.log(myArr);
+ //console.log(myArr);
 
  // add element at the begining of the Array using unshift()
  myArr.unshift(77)
- console.log(myArr) 
+ //console.log(myArr) 
 
 
  //Remove last element from Arr using pop()
  myArr.pop();
- console.log(myArr);
+ //console.log(myArr);
 
  //Remove first element from Arr using  shift()
  myArr.shift();
- console.log(myArr);
+ //console.log(myArr);
 
 // deleting and 
 
@@ -59,16 +79,16 @@
 
 let myArray = ["A", "B", "C", "D", "E","F"];
 
-console.log(myArr);
+//console.log(myArr);
 
 
 // slice() will slice out the array from the given index num
  let newArr = myArray.slice(2) // Expected output[C,D,E,F]
- console.log(newArr);
+ //console.log(newArr);
 
 // it will slice the array from index[1] to [3], INDEX[4] will not be included
  let newArr1 = myArray.slice(1,4)  // Expected output[B,C,D]
- console.log(newArr1);
+ //console.log(newArr1);
 
 
 
@@ -89,7 +109,7 @@ let myArray1 = ["A", "B", "C", "D", "E","F"];
 // join() , it will return new string separated by coma
 
 let newStr = myArray.join()
-console.log(newStr);
+//console.log(newStr);
 
 
 
@@ -97,7 +117,7 @@ console.log(newStr);
 // it will split the "newStr" string in to individual string.
 
 let aStr = newStr.split(",")
-console.log(aStr);
+//console.log(aStr);
 
 
 
@@ -120,8 +140,11 @@ console.log(newArray);
 
 
 
+console.log("\n#################################")
+console.log("#################################\n")
 
 
+/////////////////////////////
 // Nested Array/ Multidimentional Array
 
 
@@ -161,7 +184,7 @@ let num = [1,2,3,4,5,6]
 // here it will start to slice the array from index[1] and stop at index[3], index[4] will be excluded
 let newNum = num.slice(1,4);
 
-console.log(newNum);
+// console.log(newNum);
 
 // 
 function sliceOut(a){
@@ -180,7 +203,7 @@ let fruit = ["apple", "banana", "orange"];
 let num1 = [1,2,3,4];
 
 // let mix = fruit.concat(num1);
-// console.log(nix)
+// console.log(mix)
 
 
 function mix(a,b){
@@ -277,6 +300,9 @@ let n = [1,2,3,4,5,6,7];
  console.log(doubleNumbers);
 
 
+ let find1 = numbers.map((a) => a*3 )
+
+ console.log(find1);
 
 // F -> C
 //(F-32) * (5/9)
@@ -294,11 +320,44 @@ console.log(celTemp);
 
 
 
+// function gps(param){
+
+//   return param >= 2;
+
+// }
+
+// console.log(gps(numbers));
 
 
 
+/////////////////////
 
 
+
+// every()
+
+/*
+The every() method of Array instances tests whether all elements 
+in the array pass the test implemented by the provided function. 
+It returns a Boolean value. 
+*/
+
+let passVal = [1,2,3,4,5];
+
+let newPassVal = passVal.every((e) => e > 4);
+
+console.log(newPassVal);
+
+
+
+//some()
+
+// Here atleast one element is passing or not. One element has to pass
+/*
+ The some() method of Array instances tests whether at least one 
+ element in the array passes the test implemented by the provided 
+ function. It return True  or False 
+ */
 
 
 
