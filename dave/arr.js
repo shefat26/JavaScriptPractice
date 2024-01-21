@@ -410,6 +410,22 @@ console.log(modulous);
 
 
 
+// findIndexOf()
+//The findIndex() method returns the index (position) of the first element that passes a test.
+//The findIndex() method returns -1 if no match is found.
+//The findIndex() method does not execute the function for empty array elements.
+
+
+const ages = [3, 10, 18, 20];
+
+ages.findIndex(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+
+
+
 // indexOf()
 
 /*
@@ -463,4 +479,11 @@ const searchTerm = 'dog';
 console.log(
   `Index of the last ${searchTerm} is ${paragraph.lastIndexOf(searchTerm)}`,
 );
+
+
+
+
+
+
+
 

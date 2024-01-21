@@ -238,3 +238,53 @@ console.log(company);
 
 
 
+
+
+//
+
+function printHello(param) {
+    return function (param2) {
+      return param + param2;
+    };
+  }
+  
+  let a1 = printHello(5);
+  console.log(a(3));
+  
+  let b = printHello("ABCD");
+  console.log(b("word"));
+  
+  //
+  
+  let arr1 = [1, 2, 3, 4, 5];
+  
+  let x = arr.filter( (param) =>  param > 2  )
+  
+  console.log(x)
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
