@@ -410,6 +410,46 @@ console.log(modulous);
 
 
 
+// indexOf()
+
+/*
+ The indexOf() method of Array instances returns the first index at 
+ which a given element can be found in the array, or -1 if it is not
+  present.
+*/
+
+
+let fruit1 = ["apple", "banana", "mango", "pear"];
+
+//
+let index_str = fruit1.indexOf("mango")
+console.log(index_str);
+
+
+
+//
+let index_str1 = fruit1.indexOf("orange")
+console.log(index_str1);
+
+
+
+
+
+
+
+
+// lastIndexOf()
+/*
+ The lastIndexOf() method of String values searches this string and 
+ returns the index of the last occurrence of the specified substring.
+*/
+
+
+let arr = ["apple", "banana", "mango", "pear", "apple", "Orange"];
+
+let aFruit = arr.lastIndexOf("Orange")
+
+console.log(aFruit);
 
 
 
