@@ -339,7 +339,7 @@ console.log(celTemp);
 /*
 The every() method of Array instances tests whether all elements 
 in the array pass the test implemented by the provided function. 
-It returns a Boolean value. 
+It returns a Boolean value "True" or "False". 
 */
 
 let passVal = [1,2,3,4,5];
@@ -356,8 +356,57 @@ console.log(newPassVal);
 /*
  The some() method of Array instances tests whether at least one 
  element in the array passes the test implemented by the provided 
- function. It return True  or False 
- */
+ function. It return "True"  or "False "
+*/
+
+
+let testVal = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let newTest1 = testVal.some((e) => e%2 === 0)
+
+console.log(newTest1);
+
+
+
+let aTest = testVal.some((e)=> e% 2 === 0 )
+console.log(aTest);
+
+
+
+let aTest1 = testVal.some((e)=> e > 9 );
+console.log(aTest1);
+
+
+
+
+
+
+//  find()
+
+/*
+ The find() method of Array instances returns the first element in 
+ the provided array that satisfies the provided testing function. 
+ If no values satisfy the testing function, undefined is returned.
+
+*/
+
+
+let total = [1, 2,3,4,5,6];
+
+let newTotal = total.find((e) => e > 5)
+console.log(newTotal);
+
+
+// 
+let newTotal1 = total.find((e) => e === 7)
+console.log(newTotal1);
+
+
+// 
+let modulous = total.find((e) => e%3=== 0)
+console.log(modulous);
+
+
 
 
 
