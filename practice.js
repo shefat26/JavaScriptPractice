@@ -268,6 +268,68 @@ console.log(newUser1)
 
 
 
+let num = [1,2,3,4,5];
+
+let newNum = num.map((n)=> n * 2 );
+console.log(newNum);
+
+
+// 
+ 
+let newNum1 = num.forEach((n)=> n * 2 );
+//console.log(newNum1);
+
+
+ 
+let newNum2 = num.map((n)=> n / 2 );
+console.log(newNum2);
+
+
+
+
+
+
+/////
+
+
+function printHello(param) {
+    return function (param2) {
+      return param + param2;
+    };
+  }
+  
+  let a1 = printHello(5);
+  //console.log(a1(3));
+  
+  let b = printHello("ABCD");
+  //console.log(b("word"));
+  
+  //
+  
+  let arr2 = [1, 2, 3, 4, 5];
+  
+  let newArr = arr2.filter((a) => a <= 3);
+  
+  //console.log(newArr);
+  
+  
+  
+  
+  ////
+  function new1(param) {
+    return function (param4) {
+      return param + param2;
+    };
+  }
+  
+  let param4 = new1(5);
+  
+  //console.log(param1(2));
+  
+  
+  let param3 = new1(3);
+  //console.log(param2(6));
+
 
 
 
