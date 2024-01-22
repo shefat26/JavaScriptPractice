@@ -293,6 +293,10 @@ let n = [1,2,3,4,5,6,7];
 
 
 // map()
+/*
+ The map() method of Array instances creates a new array populated with the results of 
+ calling a provided function on every element in the calling array.
+*/
 
  let numbers = [1,2,3];
 
@@ -300,6 +304,8 @@ let n = [1,2,3,4,5,6,7];
  console.log(doubleNumbers);
 
 
+
+//
  let find1 = numbers.map((a) => a*3 )
 
  console.log(find1);
@@ -450,10 +456,6 @@ console.log(index_str1);
 
 
 
-
-
-
-
 // lastIndexOf()
 /*
  The lastIndexOf() method of String values searches this string and 
@@ -483,7 +485,47 @@ console.log(
 
 
 
+// reverse()
+/*
+ The reverse() method of Array instances reverses an array in place and returns the 
+ reference to the same array,the first array element now becoming the last, and the last array
+   element becoming the first.
+*/
+
+
+let frt = ["apple","banana", "mango", "pear"];
+
+let newFrt = frt.reverse();
+
+console.log(newFrt);
+
+
+//
+
+let rev = ["A","B","C","D","E"];
+
+let newRev = rev.reverse();
+
+console.log(newRev);
 
 
 
+
+// sort()
+// sort() will sort the array with Alphabetical/lexicographical order
+
+let products = ["macbook", "windows", "samsung", "canon"]
+
+let newProducts = products.sort();
+
+console.log(newProducts);
+
+
+
+// 
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
 
