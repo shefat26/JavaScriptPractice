@@ -202,6 +202,67 @@ console.log(bio(person));
 
 
 
+///
+
+
+let fruit1 = ["apple", "banana", "mango", "pear"];
+
+//findIndex()
+let index_str = fruit1.findIndex((e)=> e === "mango");
+console.log(index_str);
+
+
+
+let index_str1 = fruit1.indexOf("mango");
+console.log(index_str1);
+
+
+
+
+// sort()
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+let newMonth = months.sort();
+
+//
+let mapped = months.map((m) => (" MONTH ").concat(m))
+console.log(mapped);
+
+
+
+
+//object
+
+
+let users = [
+  { firstName: "Susan", lastName: "Steward", age: 17, hobby: "Singing" },
+  { firstName: "Daniel", lastName: "Longbottom", age: 18, hobby: "Football" },
+  { firstName: "Jacob", lastName: "Black", age: 19, hobby: "Singing" }
+];
+
+
+let newUser = users.find((u) => u.age === 15);
+console.log(newUser)
+
+//
+
+let newUser1 = users.map((u) => {
+
+
+
+   return   u.age >= 18? {
+      ...u, person: "Adult"
+      
+    }:{
+
+      ...u, person: "Minor"
+    }
+    
+    
+
+});
+console.log(newUser1)
+
 
 
 
