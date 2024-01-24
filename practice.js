@@ -332,5 +332,63 @@ function printHello(param) {
 
 
 
+// rest operator
+
+let arr5 = [6,7,8,9,10,11,12]
+
+let [,,, ...p] = arr5;
+
+
+console.log(p);
+
+
+
+
+
+// spread operator
+let arr4 = [1,2,3,4,5]
+
+let arr6 = [...arr4, ...arr5]
+console.log(arr6)
+
+
+///
+
+let obj4= {
+
+  name: "James"
+}
+
+let obj5= {
+
+  job: "Teaching",
+  age: 35
+}
+
+//
+let obj6 = {
+
+  ...obj4,
+  ...obj5
+}
+
+//console.log(obj6)
+
+
+
+//
+let str1 = "abcd"
+let str2 = "str2"
+
+let obj7 = {
+
+  str1,
+  str2
+  
+}
+
+console.log(obj7)
+
+
 
 

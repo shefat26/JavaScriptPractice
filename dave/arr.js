@@ -511,6 +511,9 @@ console.log(newRev);
 
 
 
+
+//  ################################# sort() ##########################################
+
 // sort()
 // sort() will sort the array with Alphabetical/lexicographical order
 
@@ -522,10 +525,26 @@ console.log(newProducts);
 
 
 
-// 
+// sort()
 
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
 console.log(months);
 // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+
+
+//sort()
+
+let serial = [1,6,4,"work", "Arrow", 2, "book", "arrange", 3, "Binder"]
+
+let newSerial = serial.sort();
+
+console.log(newSerial);
+
+
+
+
+
+
 
