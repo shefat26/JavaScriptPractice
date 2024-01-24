@@ -37,15 +37,27 @@ print();
 
 function browserInfo(browserName, browserVersion, remoteExcution){
 
-    if(typeof browserVersion === 'string' && typeof remoteExecution === 'boolean'){
+    if(typeof browserVersion === 'number' && typeof remoteExecution === 'boolean'){
 
         console.log(`'Browser:' ${browserName}, 
         'version:' ${browserVersion}, 
         'remoteExe:'${remoteExcution}`);
 
     }
-    
+    else if(typeof browserVersion === 'number'){
+
+        console.log(`'Browser:' ${browserName}, 
+        'version:' ${browserVersion}`)
+
+    }
+    else{
+
+        console.log(`Browser: ${browserName}`);
+    }
+
 
 }
 
 browserInfo('chrome', 115, true)
+browserInfo('chrome', 115)
+browserInfo('firefox')
