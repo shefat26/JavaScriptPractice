@@ -231,7 +231,7 @@ console.log("########### Higher-Order function ##########\n")
 // Anonymous Functions
 // Anonymous Functions used in the object property
 
-const  multiply = function (a,b){
+const  multiply1 = function (a,b){
 
     return a*b ;
 

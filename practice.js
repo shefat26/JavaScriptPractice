@@ -153,7 +153,7 @@ let compare = (num)=>{
     }
 }
 
-console.log(compare(arr))
+//console.log(compare(arr))
 
 
 
@@ -390,5 +390,34 @@ let obj7 = {
 console.log(obj7)
 
 
+//
+
+let user = {
+
+  name: "michael",
+  age: 25,
+  country: "USA",
+  occupation: "Engineer",
+  homeOwner: "yes",
+
+
+}
+
+let {name,age,country,Occupation} = user ;
+
+console.log(name)
+console.log(age)
+
+
+
+//
+
+let  d = [1,2,3,4,5]
+
+let f = [6,7,8,9,10]
+
+let g = [...d, ...f];
+
+console.log(g);
 
 
