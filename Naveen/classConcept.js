@@ -41,4 +41,31 @@ let users1 = [
 
   
 
-  
+
+  ///
+
+
+  class Car{
+
+    constructor(name, price, model, color){
+
+        this.name
+        this.price
+        this.model
+        this.color
+
+    }
+
+
+    refuel(){
+
+        console.log("car is refueled");
+
+    }
+
+
+  }
+
+  const c1 = new Car("BMW", 100, "520d", "Black")
+
+  console.log(c1.name);
