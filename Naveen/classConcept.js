@@ -1,71 +1,66 @@
 
 
 
-
-// Object with ternary operator
-
-let users1 = [
-    { firstName: "Susan", lastName: "Steward", age: 17, hobby: "Singing", salary: 30000 },
-    { firstName: "Daniel", lastName: "Longbottom", age: 18, hobby: "Football", salary: 70000 },
-    { firstName: "Jacob", lastName: "Black", age: 19, hobby: "Singing", salary: 50000 },
-  ];
-  
-  let mapped1 = users1.map((u) => {
-  
-  
-    return {
-      ...u,
-      
-      fullName : u.firstName + "" + u.lastName,
-      adult : u.age >= 18 ? true : false, 
-      minor : u.age <18 ? true : false,
-      salary: u.salary <= 30000 ? "lowerClass" : "middleClass"
-      
-    };
-  });
-  console.log(mapped1);
-  
-  
-  // Destructring object
-  
-  let obj8 = {
-    firstName: "Susan",
-    lastName: "Steward",
-    age: 17,
-    hobby: "Singing",
-  };
-  
-  let { firstName, lastName, age, hobby } = obj8;
-  
-  console.log(firstName);
-
-  
+// class & object & constructor
+// Duplicate constructor or constructor overloading is not permited in javaScript
+// We can't have duplicate constructor in javaScript, we can only have one constructor in javaScript
 
 
-  ///
 
+class Car {
 
-  class Car{
+    // first constructor
+    // Duplicate constructor or constructor overloading is not permited in javaScript
+    constructor(name, price,model, color){
 
-    constructor(name, price, model, color){
-
-        this.name
-        this.price
-        this.model
-        this.color
+        this.name = name;
+        this.price = price;
+        this.model = model;
+        this.color = color;
 
     }
+
 
 
     refuel(){
 
-        console.log("car is refueled");
-
+        console.log(this.name +  " car is refueled");
     }
 
+}
 
-  }
+// new keyword: to create the object:
+ const c1 = new Car("BMW", 100, "X5", "Black");
 
-  const c1 = new Car("BMW", 100, "520d", "Black")
 
-  console.log(c1.name);
+
+ console.log(c1.name);
+ console.log(c1);
+ console.log(c1.price);
+ console.log(c1.model);
+ c1.refuel()
+
+  
+ console.log("\n################\n")
+
+ //
+ const c2 = new Car("Honda", 20000, "Civic", "white");
+
+ console.log(c2)
+ console.log(c2.name);
+ console.log(c2.model);
+ console.log(c2.color);
+ c2.refuel()
+
+
+ console.log("\n################\n")
+
+
+ const c3 = new Car("Audi")
+
+ console.log(c3)
+ console.log(c3.name);
+ console.log(c3.model);
+ console.log(c3.color);
+ c3.refuel()
+
