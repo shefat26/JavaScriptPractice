@@ -64,3 +64,50 @@ class Car {
  console.log(c3.color);
  c3.refuel()
 
+ console.log("\n################\n")
+
+
+ const c4 = new Car("Audi", "A6", 20000, "Black")
+
+ console.log(c4)
+ console.log(c4.name);
+ console.log(c4.model);
+ console.log(c4.color);
+ c3.refuel()
+
+
+
+
+
+
+ class House {
+
+    // first constructor
+    // Duplicate constructor or constructor overloading is not permited in javaScript
+    constructor(name, price, color, year){
+
+        this.name = name;
+        this.price = price;
+        //this.model = model;
+        this.color = color;
+        this.year = year;
+
+    }
+
+
+ }
+
+ const c5 = new House("Private House", 50000, "Green", 2015,)
+
+ console.log(c5)
+ console.log(c5.name);
+ console.log(c5.price);
+ console.log(c5.year);
+ console.log(c5.color);
+
+ 
+
+
+
+
+
