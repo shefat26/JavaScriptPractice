@@ -421,3 +421,33 @@ let g = [...d, ...f];
 console.log(g);
 
 
+
+
+///
+
+
+// run test cases on remote machine:
+// tell me browserName, browserVersion, remoteExcution
+
+
+
+function browserInfo(browserName, browserVersion, remoteExcution){
+
+  if(typeof browserVersion === 'number' && typeof remoteExecution === 'boolean'){
+
+      console.log(`'Browser:' ${browserName}, 
+      'version:' ${browserVersion}, 
+      'remoteExe:'${remoteExcution}`);
+
+  }
+  else{
+
+      console.log(`Browser: ${browserName}`);
+  }
+
+
+}
+
+browserInfo('chrome', 115, true)
+browserInfo('chrome', 115)
+browserInfo('firefox')
