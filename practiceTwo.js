@@ -46,6 +46,64 @@ let users = [
   
   console.log(turn);
   
+
+
+
   
+  ////
+  ////
+  // Object practice
   
-  
+  let obj = {
+    firstName1: "Susan",
+    lastName1: "Steward",
+    age1: 17,
+    hobby1: "Singing",
+    salary1: 30000,
+  }
+
+
+
+// destructring object
+
+let {hobby1,salary1, firstName1,lastName1, ...bio} = obj
+
+console.log(bio)
+console.log(firstName1)
+console.log(lastName1)
+
+
+console.log("\n#############\n")
+
+// renaming object
+
+let anObj = {
+
+ person: "James Watson",
+ job : "Banker",
+ house: "rent",
+ earnings: 50000
+}
+
+
+let {person: names, job:work, house:home, earnings: earn} = anObj ;
+
+console.log(names)
+console.log(work)
+console.log(home)
+console.log(earn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
