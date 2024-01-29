@@ -96,12 +96,40 @@ console.log(earn)
 
 
 
+// map() 
+
+const arr = [1, 4, 9, 16];
+
+let newArr = arr.map((e) => e * 2);
+console.log(newArr)
+
+let div = newArr.map((e) => e/2 );
+console.log(div);
+
+
+
+//
+
+const num = [1, 4, 16, 9];
+
+//The Math.sqrt() static method returns the square root of a number.
+
+let newNum = num.map((e) => Math.sqrt(e));
+
+console.log(newNum);
 
 
 
 
 
+// Multiparameter map()
+let aNum = num.map((value,index, e) => {
 
+  return value * index 
+
+})
+
+console.log(aNum);
 
 
 
