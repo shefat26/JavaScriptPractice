@@ -133,5 +133,69 @@ console.log(aNum);
 
 
 
+// map with object
+
+
+let device =[ 
+
+  {
+
+  name: "laptop",
+  price: 1000,
+  count: 5
+},
+{
+  
+  name:"desktop",
+  price: 1500,
+  count: 2
+
+},
+{
+  name:"phone",
+  price:500,
+  count:10
+}
+
+]
+
+let totalValue = device.map((item) => item.price * item.count);
+
+console.log(totalValue);
+
+
+// 
+let priceCheck = device.map((item) => {
+
+  return item.count === 5  ? "True" : "False"
+
+})
+
+console.log(priceCheck);
+
+
+
+// string to numbers 
+
+let str = ["1", "2", "3", "4"]
+
+let nums = str.map(Number);
+
+console.log(nums);
+
+
+
+
+// p = function(item){
+
+//   return item.count === 2 ? "Price matched" : "Price did not match"
+
+// }
+
+
+
+
+
+
 
 
