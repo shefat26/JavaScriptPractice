@@ -94,7 +94,7 @@ let find = employee.filter((e) =>{
 console.log(find);
 
 
-// remove all the duplicate
+// remove all the duplicate use   filter()
 
 let num = [1,2,3,2,1,3,3,5,4,6];
 
@@ -118,3 +118,72 @@ let div = num.filter(( e) => {
 }) ;
 
 console.log(div);
+
+
+
+//////////////////////////////////
+///////////////////////////////////
+//////////////////////////////////
+
+
+
+let numb = [1,2,3,4,5]
+
+let sum = numb.reduce((acc,e) => acc + e, 0)
+
+console.log(sum);
+
+
+
+
+
+
+// Find the max number 
+
+let top = [10,5,25,8,30,15];
+
+let newTop = top.reduce((max,num) => {
+
+   return num > max ? num : max  ;
+
+}, top[0]);
+
+console.log(newTop);
+
+
+
+
+// shoppint cart 
+
+
+let cart = [
+
+  { name: "jeans", price: 500},
+  { name: "shirt", price: 300},
+  { name: "shoes", price: 1000},
+  { name: "Hat", price: 100},
+  { name: "Tshirt", price: 400}
+
+]
+
+
+// reduce()
+let totalPrice = cart.reduce((total, item) => total + item.price,  0);
+
+console.log(totalPrice);
+
+
+// filter()
+let some = cart.filter((e) => e.price >300);
+
+console.log(some);
+
+
+
+
+
+
+
+
+
+
