@@ -167,7 +167,7 @@ console.log(totalValue);
 // 
 let priceCheck = device.map((item) => {
 
-  return item.count === 5  ? "True" : "False"
+  return item.count === 5  ? "True" : "False" ;
 
 })
 
@@ -191,6 +191,36 @@ console.log(nums);
 //   return item.count === 2 ? "Price matched" : "Price did not match"
 
 // }
+
+
+
+// filter()
+let word = ["add", "subtract", "plus", "minus", "add", "plus"] ;
+
+let newWord = word.filter((e) =>  e === "add");
+
+console.log(newWord);
+
+
+// filter()
+
+let numb = [1,2,3,4,5,6,7,8,9,10];
+
+let newNumb = numb.filter((e) => e % 3 === 1);
+
+console.log(newNumb);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
