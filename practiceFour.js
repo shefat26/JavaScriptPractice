@@ -119,4 +119,51 @@ let product = {
 
 
   
+  //
 
+
+  let users = [
+    { firstName: "Susan", lastName: "Steward", age: 17, hobby: "Singing" },
+    { firstName: "Daniel", lastName: "Longbottom", age: 18, hobby: "Football" },
+    { firstName: "Jacob", lastName: "Black", age: 19, hobby: "Singing" }
+  ];
+
+  
+  let newUser = users.find((e)=> e.firstName === "Susan")
+
+  console.log(newUser);
+
+
+///////
+
+  let mapping = users.map((e) =>{
+
+    return e.age > 17 ? e.firstName : "Under Age"
+
+  })
+
+  console.log(mapping);
+
+
+
+  ///////
+
+
+  let newUser1 = users.map((u) => {
+
+
+
+    return   u.age >= 18? {
+       ...u, person: "Adult"
+       
+     }:{
+ 
+       ...u, person: "Minor"
+     }
+     
+     
+ 
+ });
+ console.log(newUser1)
+
+ 
