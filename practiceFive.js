@@ -38,5 +38,7 @@ let product = {
   console.log(aObj);
 
 
+  console.log("\n################\n");
 
-  
+  ////
+
