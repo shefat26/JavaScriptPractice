@@ -72,9 +72,25 @@ class car extends vehicle{
 }
 
 
-
-
 // Second child class of vehicle, use extend method
 
+
+class Truck extends vehicle{
+
+    constructor(make,model,year, loadingCapacity){
+
+        super(make,model,year);
+        this.loadingCapacity = loadingCapacity;
+
+    }
+
+
+    driveTruck(){
+
+        console.log("driving the Truck " + this.model + "capacity" + this.loadingCapacity);
+
+    }
+
+}
 
 
