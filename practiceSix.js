@@ -152,4 +152,76 @@ console.log(newTop);
 
 
 
+// join() method
+
+
+let names = ["Danny", "Joe", "Sara", "Moly"]
+
+let stringNames = names.join( " and ")
+
+console.log(stringNames)
+
+
+
+// concat ()
+
+let people = ["John" , "Tom"];
+
+let newPeople = ["Delia", "Smith"];
+
+let totalPeople = names.concat(people, newPeople)
+
+console.log(totalPeople);
+
+
+
+
+// splice()
+
+
+// index 2, item 1 will be remove .
+let newTotalPeople = totalPeople.splice(2,1)
+
+console.log(newTotalPeople);  // "Sarah" will be remove from the []
+
+console.log(totalPeople);
+
+
+// At index 2, "WALKER" will be added, 0 item will be removed
+let newTotalPeople2 = totalPeople.splice(2,0,"WALKER");
+
+//console.log(newTotalPeople2);
+
+console.log(totalPeople);
+
+
+// aT INDX 3, "Moly" will be removed, "JERIN", "ROHAN" will be added in indx [3]&[4]
+let addAndRemove = totalPeople.splice(3,1,"JERIN", "ROHAN")
+
+console.log(addAndRemove); // "Moly" removed
+
+console.log(totalPeople);
+
+
+
+
+
+// slice()
+
+
+let fewNames = ["Danny", "Joe", "Sara", "Moly", "Rocky"]
+
+
+// slice() method will take the index 1 and 2 into different array
+// slice() do not manupulate the original Array
+ let slicedName = fewNames.slice(1,3);
+
+ console.log(slicedName);
+
+ console.log(fewNames);
+
+
+
+
+
 
