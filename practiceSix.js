@@ -99,5 +99,57 @@ let product = {
 
   
 
-  
+
+
+  //////////////////////////////////////
+  //////////////////////////////////////
+
+
+
+
+// remove all the duplicate use   filter()
+
+let num = [1, 2, 3, 2, 1, 3, 3, 5, 4, 6];
+
+//console.log(num);
+
+let newNum = num.filter((value, index, e) => {
+  return e.indexOf(value) === index;
+});
+
+//console.log(newNum);
+
+// filter duplicate and remainder "0"
+
+let div = num.filter((e) => {
+  return e % 2 === 0 && e > 2;
+});
+
+console.log(div);
+
+//////////////////////////////////
+
+
+let numb = [1, 2, 3, 4, 5];
+
+let sum = numb.reduce((acc, e) => acc + e, 0);
+
+console.log(sum);
+
+// Find the max number
+
+let top = [10, 5, 25, 8, 30, 15];
+
+let newTop = top.reduce((max, num) => {
+  return num > max ? num : max;
+}, top[0]);
+
+console.log(newTop);
+
+
+
+
+
+
+
 
