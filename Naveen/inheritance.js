@@ -1,5 +1,4 @@
 
-
 //inheritance
 
 //To create a class inheritance, use the extends keyword.
@@ -10,35 +9,35 @@
 
 class vehicle{
 
-    // constructor
-   constructor(make,model,year){
+     // constructor
+    constructor(make,model,year){
 
-       this.make = make;
-       this.model = model;
-       this.year = year;
+        this.make = make;
+        this.model = model;
+        this.year = year;
 
-   }
+    }
 
 
-   // method()
+    // method()
 
-   getInfo(){
+    getInfo(){
 
-       return `${this.make}, ${this.model}, ${this.year}`;
+        return `${this.make}, ${this.model}, ${this.year}`;
 
-   }
+    }
 
-   startEngine(){
+    startEngine(){
 
-       console.log("starting engine...");
+        console.log("starting engine...");
 
-   }
+    }
 
-   stopEngine(){
+    stopEngine(){
 
-       console.log("Stopping Engine...");
+        console.log("Stopping Engine...");
 
-   }
+    }
 
 }
 
@@ -49,48 +48,30 @@ class car extends vehicle{
 
 
 
-    //we created a constructor and added "fuelType" parameter in "car" class constructor */
-   constructor(make,model,year, fuelType){
+     //we created a constructor and added "fuelType" parameter in "car" class constructor */
+    constructor(make,model,year, fuelType){
 
 
-       //super keyword is being used to call the parent class constructor 
-       /* we called this constructor from parent "vehicle" class */
-       super(make,model,year)
+        //super keyword is being used to call the parent class constructor 
+        /* we called this constructor from parent "vehicle" class */
+        super(make,model,year)
 
-       this.fuelType = fuelType  // we initialize fuelType parameter here
-
-
-   }
+        this.fuelType = fuelType  // we initialize fuelType parameter here
 
 
-   driveCar(){
+    }
 
-       console.log("drive the car " + this.model)
 
-   }
+    driveCar(){
+
+        console.log("drive the car " + this.model)
+
+    }
 
 }
+
+
 
 
 // Second child class of vehicle, use extend method
-
-
-class Truck extends vehicle{
-
-    constructor(make,model,year, loadingCapacity){
-
-        super(make,model,year);
-        this.loadingCapacity = loadingCapacity;
-
-    }
-
-
-    driveTruck(){
-
-        console.log("driving the Truck " + this.model + "capacity" + this.loadingCapacity);
-
-    }
-
-}
-
 
