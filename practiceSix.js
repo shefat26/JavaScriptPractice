@@ -34,11 +34,7 @@ let employee = [
    }
   console.log(addEmp(rohim));
   
-  
-  
-  
-  
-  
+
   
   // removing data to employee Array
    function removeEmp(id){
@@ -50,13 +46,6 @@ let employee = [
   
   
   
-  
-  
-  
-  
-  
-  
-  
   // finding data from employee Array
    function findEmp(id){
   
@@ -65,7 +54,50 @@ let employee = [
    }
   console.log(findEmp(40))
 
+
+
+  ///
+let find = employee.filter((e) => {
+    return e.age > 30 && e.gender === "female";
+  });
+  
+  //console.log(find);
+  
   
 
 
+let fin = employee.filter((e) => {
+    return e.age > 30 && e.gender === "male";
+  });
   
+  //console.log(fin);
+  
+  
+
+
+
+
+
+  ///
+let product = {
+    name: "laptop",
+    price: 1000,
+    count: 5,
+  };
+  
+  let anProduct = {
+    name2: "desktop",
+    price2: 1500,
+    count2: 2,
+  };
+  
+  let { count, ...pr } = product;
+  let { name2, ...ap } = anProduct;
+  
+  let mixProduct = { ...pr, ...ap, key: "monitor" };
+  console.log(mixProduct);
+
+  
+
+  
+
