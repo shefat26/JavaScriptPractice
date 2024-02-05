@@ -294,10 +294,72 @@ console.log(doubled);
 
 //
 
-
+// expeted out put for map() is true or false here.
 let mapped = nums.map((e) => e%2 === 1);
 
 console.log(mapped);
 
+
+
+
+
+////
+
+
+// reduce()
+
+let numbs = [1,2,3,4,5]
+
+
+// add array element using reduce() method 
+
+let sume = numbs.reduce((acc , e) => {
+
+  return acc + e
+
+},0)
+
+console.log(sume);
+
+
+
+
+
+
+//
+
+// Find the max number 
+
+let max = [10,5,25,8,30,15];
+
+let newmax = top.reduce((maxed,num) => {
+
+   return maxed > num ? maxed: num ;
+
+}, max[0]);
+
+console.log(newmax);
+
+
+
+
+///
+
+
+
+let cart = [
+
+  { name: "jeans", price: 500},
+  { name: "shirt", price: 300},
+  { name: "shoes", price: 1000},
+  { name: "Hat", price: 100},
+  { name: "Tshirt", price: 400}
+
+]
+
+
+let item = cart.filter((e) => e.name === "shirt" )
+
+console.log(item);
 
 
