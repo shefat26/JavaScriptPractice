@@ -224,4 +224,80 @@ let fewNames = ["Danny", "Joe", "Sara", "Moly", "Rocky"]
 
 
 
+ // indexOf()
+
+ let indexName = ["Danny", "Joe", "Sara", "Moly", "Rocky"]
+
+ let newIdx = indexName.indexOf("Joe");
+
+ console.log(newIdx);
+
+
+
+
+ // lastIndexOf() 
+
+ let lastIdx = indexName.lastIndexOf("Joe");
+
+ console.log(lastIdx);
+
+
+
+
+
+ // forEach()
+ /* The forEach() method of Array instances executes a provided 
+ function once for each array element. */
+
+ let each = indexName.forEach((e) => console.log(e));
+
+
+ console.log("\n###################\n");
+
+
+
+ // looping through the indexName Array
+
+  for(let i = 0; i<names.length; i++){
+
+    console.log(indexName[i]);
+
+  }
+
+
+
+ //
+
+
+ // flat()
+// flat() method will flat out multidimentional Array into one
+
+let numsArr = [1, 2, 3, 4 [ 5, 6], 7, 8]
+
+let fla = numsArr.flat();
+
+console.log(fla);
+
+
+
+
+// map()
+
+let nums = [1, 2, 3, 4, 5, 6]
+
+//
+let doubled = nums.map((n) => n * 2);
+
+console.log(doubled);
+
+
+
+//
+
+
+let mapped = nums.map((e) => e%2 === 1);
+
+console.log(mapped);
+
+
 
