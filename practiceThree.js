@@ -113,11 +113,24 @@ console.log(newNum);
 
 let div = num.filter(( e) => {
   
-  return e%2 === 0 && e > 2 ;
+  return e%2 === 0  && e > 2;
 
 }) ;
 
 console.log(div);
+
+
+
+
+// filter duplicate and remainder "0" 
+
+let divDup = num.filter(( e) => {
+  
+  return e%3 === 0 || e%5 === 1 ;
+
+}) ;
+
+console.log(divDup);
 
 
 
@@ -142,13 +155,26 @@ console.log(sum);
 
 let top = [10,5,25,8,30,15];
 
+
+
 let newTop = top.reduce((max,num) => {
 
-   return num > max ? num : max  ;
+   return max > num ? max:num ;
 
 }, top[0]);
 
 console.log(newTop);
+
+
+// find the min number 
+
+let newMin = top.reduce((min,num) => {
+
+   return min < num ? min:num ;
+
+}, top[0]);
+
+console.log(newMin);
 
 
 
@@ -174,7 +200,7 @@ console.log(totalPrice);
 
 
 // filter()
-let some = cart.filter((e) => e.price >300);
+let some = cart.filter((e) => e.price >100);
 
 console.log(some);
 
