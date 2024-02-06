@@ -163,3 +163,87 @@ if (e%2 || e%5 == 0 ) {
  }
 
 console.log("++++++++++")
+
+////
+
+
+
+// How to increment by 2  using  for loop ????
+
+
+
+
+for (let i = 0; i<=10; i+=2) {     // Here  " i+=2 "  means we are incrementing by 2 each time
+
+   
+   
+   
+    console.log(i);
+
+
+}
+
+
+
+//
+
+
+
+for( let a = 0; a<=5 ; a++){
+
+
+
+    console.log('walking');       // in this loop we are just printing ' walking ' five times
+
+}
+
+
+
+
+
+
+// How to add numbers by using  for  loop  ????
+
+
+
+
+let total = 0;                     // this line means initializing total num is 0 here
+
+for( let b = 0;  b<=10; b++){
+
+
+    console.log(b);                  // This line will print  1 to 10 in console
+
+    total= +b;                     // This line will add all the number 0 throu 10 
+
+}
+
+
+ console.log("tolal number is : " + b);      // Thia line will print the total num in console
+                                        // we willl receive total number 11, from 0-10 .  
+
+  
+
+ // Second loop
+//######################################
+
+
+  let totals= 0;
+
+  for( num = 0; num<=10; num++){
+
+
+    totals = totals + num;           // This line will add all the num from 0 t0 10 together,
+                                    // it will be like, 0+1+2+3+4+5+6+7+8+9+10 = 55                                         
+                                                                                    
+                                                                                                                                             
+  }
+        
+  console.log(" Final number is : " + totals);
+                                        
+
+console.log("###########################")
+
+
+
+
