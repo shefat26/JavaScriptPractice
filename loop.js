@@ -119,3 +119,47 @@ while(required){
 console.log("#######################")
 
 
+
+
+// Now we will work on for loop 
+
+console.log("d is greater than ten")
+
+
+for (a = 2; a <= 12; a++){
+
+    console.log(a)
+}
+
+
+console.log("")
+
+
+
+// 2 and 5
+
+// from 1 to 10 give me common multiple values of 2 and 5 
+
+for (var b =1; b<= 10; b++){
+
+    if (b%2 == 0  &&  b%5 == 0) {       // so here we are pluging two condition at once 
+                                        // we will get the result for both condition that matches
+        console.log(b)                  // 10 is the correct answer for both condition
+    }
+}
+
+
+// 2 or 5
+
+// // from 1 to 10 give me common multiple values of 2 and 5 
+
+ for (var e =1;  d <=10; e++){
+
+if (e%2 || e%5 == 0 ) {
+
+     console.log(e)
+ }
+
+ }
+
+console.log("++++++++++")
