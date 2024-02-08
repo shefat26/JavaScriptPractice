@@ -84,13 +84,72 @@ let newBeasts = beasts.indexOf("camel")
 console.log(newBeasts);
 
 console.log(beasts.indexOf("bison"));
-console.log(beasts.indexOf("bison"));
+console.log(beasts.indexOf("bison",2));
 
 
 
 
+// reverse()
 
 
+const rev = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+
+let newRev = rev.reverse()
+
+console.log(newRev);
+
+
+
+// sort()
+
+let product = ["macbook", "imac", "samsung", "canon","123test","T-Shirt"];
+
+let newProd = product.sort()
+
+console.log(newProd);
+
+
+
+
+// map()
+/*
+The map() method of Array instances creates a new array populated 
+with the results of calling a provided function on every element in 
+the calling array.
+*/
+
+
+let num = [1, 3, 5, 7]
+
+let newNum = num.map((e) => e * 2);
+
+console.log(newNum);
+
+
+//
+
+let eve = num.map((e) => e%3 === 0)
+
+console.log(eve);
+
+
+
+// filter()
+
+//find the even number
+
+let even = [1,2,3,4,5,6,7,8,9,10]
+
+
+let newEve = even.filter((e) => e%2 === 0);
+
+console.log(newEve);
+
+
+let multiply = even.filter((e) => e/2);
+
+console.log(multiply);
 
 
 
