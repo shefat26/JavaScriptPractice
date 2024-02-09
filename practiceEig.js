@@ -113,21 +113,40 @@ let each = frut.forEach((e) =>  console.log(e));
 
 // object dectructring practice
 
-let product = {
+let device = {
   name: "laptop",
   price: 1000,
   count: 5,
 };
 
-let anProduct = {
+let anDevice = {
   name2: "desktop",
   price2: 1500,
   count2: 2,
 };
 
-let { count, ...pr } = product;
-let { name2, ...ap } = anProduct;
+let { count, ...pr } = device;
+let { name2, ...ap } = anDevice;
 
-let mixProduct = { ...pr, ...ap, key: "monitor" };
-console.log(mixProduct);
+let totalProduct = { ...pr, ...ap, key: "monitor" };
+console.log(totalProduct);
+
+
+
+
+let product3 = {
+  ...product,
+  ...anProduct,
+};
+
+const world = "hello";
+
+///
+const aObj = {
+  world: world,
+};
+
+console.log(aObj);
+
+
 
