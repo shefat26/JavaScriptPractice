@@ -50,6 +50,8 @@ letters.forEach((e) => {
 
     //return  count[e] === letters ? count[e]++ : count[e] = 1  ;
 
+
+    
     if(count[e]){
 
         count[e] ++
