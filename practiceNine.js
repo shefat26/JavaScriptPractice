@@ -112,10 +112,36 @@ console.log(color);
 
 
 
+function obj(a){
+
+    if( model=== "500" && color === "white"){
+
+        console.log("true")
+    }
+
+    return model ;
+}
+
+console.log(obj(car))
 
 
 
+//
 
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+
+function pushed(param) {
+  let a = [];
+
+  for (let i = 0; i < param.length; i++) {
+    if (param[i] > 6) {
+      a.push(param[i]);
+    }
+  }
+  return a ;
+}
+console.log(pushed(arr))
 
 
 
