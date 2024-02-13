@@ -4,10 +4,10 @@
 let player = [
 
     { names: "James", game: "Soccer", age: 35, position: "Forward"  },
-    { names: "Jonny", game: "Soccer", age: 30, position: "Forward"  },
-    { names: "Russel", game: "Soccer", age: 25, position: "Forward"  },
-    { names: "Filder", game: "Soccer", age: 20, position: "Forward"  },
-    { names: "Watson", game: "Soccer", age: 38, position: "Forward"  }
+    { names: "Jonny", game: "Soccer", age: 30, position: "Bacword"  },
+    { names: "Russel", game: "Soccer", age: 25, position: "Strick"  },
+    { names: "Filder", game: "Soccer", age: 20, position: "Keeper"  },
+    { names: "Watson", game: "Soccer", age: 38, position: "Mid"  }
 
 ]
 
@@ -27,14 +27,46 @@ console.log("Spread Operator :- ",clon);
 
 
 
+// filter
+
+let getData = player.filter((e) => e.age > 30)
+
+console.log("\n\nfilter:- \n", getData);
+
+
+//map()
+
+let mapping = player.map((e) => e.age === 30)
+
+console.log(mapping);
+
+
+
+
 // sort
 
 let device = ["Laptop", "Phone", "Tablet", "Cell phone", "Apple", "accent"]
+
+
+
 let organize = device.sort()
 
 console.log("Organize :-",organize);
 
 
+
+// find()
+
+let look = device.find((e) => e === "Phone");
+
+console.log(look);
+
+
+// indexOf()
+
+let indx = device.indexOf((e) => e === "Phone");
+
+console.log(indx)
 
 
 
@@ -66,6 +98,17 @@ let { house } = person;
 // renaming destructure key, job to work
  let { job:work } = person ;
  console.log(work);
+
+
+
+//
+ const car = { type: "Fiat", model: "500", color: "white" };
+
+let { type: year, model, color } = car;
+
+console.log(year);
+console.log(model);
+console.log(color);
 
 
 
