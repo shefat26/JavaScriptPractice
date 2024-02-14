@@ -106,6 +106,83 @@ console.log(tesla.engine());
 
 
 
+/////////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+
+// RANDOM Obj practice
+
+
+
+let obj = { names: "James", game: "soccer", age: 30, position: "strike" };
+
+let { names, ...activity } = obj;
+
+console.log(names);
+console.log(activity);
+
+let field = {
+  names,
+  ...activity,
+};
+
+console.log(field);
+
+//
+
+let arr = [
+  {
+    names: "James",
+    game: "soccer",
+    age: 30,
+    position: "strike",
+    income: 40000,
+    gender: "Male",
+  },
+  {
+    names: "Jonson",
+    game: "soccer",
+    age: 35,
+    position: "strike",
+    income: 50000,
+    gender: "Male",
+  },
+  {
+    names: "Lily",
+    game: "soccer",
+    age: 25,
+    position: "strike",
+    income: 30000,
+    gender: "female",
+  },
+  {
+    names: "Sara",
+    game: "soccer",
+    age: 23,
+    position: "strike",
+    income: 20000,
+    gender: "female",
+  },
+];
+
+
+let mapping = arr.map((e) => {
+
+   return { 
+     ...e,
+      senior:e.age >25 ,
+
+      status:e.income > 30000 ? "UpperClass" : "MiddleClass"
+          
+          } 
+  
+});
+
+console.log(mapping)
+
+
+
 
 
 
