@@ -70,3 +70,57 @@ function counts(num){
 }
 
 console.log(counts(25))
+
+
+
+//
+
+function sum(num1,num2){
+
+    if(num2 === undefined){
+
+        return num1+num1;
+
+    }
+    else{
+
+        return num1 + num2 ;
+
+    }
+
+}
+
+console.log(sum(5, 12));
+
+
+//
+
+function userMail(email){
+
+    //
+    return email.slice(0,email.indexOf("@"));
+
+}
+
+console.log(userMail("mymail@yahoo.com"));
+console.log(userMail("theirmail@yahoo.com"));
+
+
+
+
+
+
+// Anonymous function 
+
+
+let properCase = function(name){
+
+
+    return name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
+
+}
+
+console.log(properCase("jAmEs"));
+console.log(properCase("aDaMs"));
+
+
