@@ -104,6 +104,80 @@ console.log(tesla.engine());
 
 
 
+//Example:
+
+/*
+ Destructuring  obj property
+
+*/
+
+const music = {
+
+  vocals: "Robert Plant",
+  guiter: "Jimmy Page",
+  bass: "John Paul Jones",
+  drums: "John Boham"
+
+};
+
+
+// adding property
+
+music.keyboards = "Paul Waker"
+console.log(music);
+
+
+// Deleting property
+
+delete music.drums;
+
+
+//checking the deleted property , it will return "True" or "False"
+console.log(music.hasOwnProperty("drum"))
+
+
+//passing all the keys here
+console.log(Object.keys(music));
+
+
+
+// passing all the key values here
+
+console.log(Object.values(music))
+
+
+
+
+
+/* Here we are replacing key "guiter" with "myVariable" and 
+  we will console log "myVariable" instead of "musick.guiter" 
+  to get the "guiter" key value */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /////////////////////////////////////////////
