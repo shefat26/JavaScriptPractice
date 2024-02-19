@@ -71,13 +71,13 @@ let users = [
   let korim = { id: 8, name: "korim", age: 33, gender: "male" };
   
   let both = [rohim, korim];
-  //console.log(both)
+  console.log(both)
   
   // add data to employee Array
   function addEmp(param) {
     return [...employee, ...param];
   }
-  //console.log(addEmp(both));
+  console.log(addEmp(both));
   
   // removing data to employee Array
   function removeEmp(arg, argu) {
@@ -89,14 +89,14 @@ let users = [
   function findEmp(arg) {
     return employee.filter((e) => e.age !== arg);
   }
-  //console.log(findEmp(25));
+  console.log(findEmp(25));
   
   ///
   let find = employee.filter((e) => {
     return e.age > 30 && e.gender === "female";
   });
   
-  //console.log(find);
+  console.log(find);
   
   // remove all the duplicate use   filter()
   
@@ -121,5 +121,48 @@ let users = [
     return e % 2 === 0 && e > 2;
   });
   
-  //console.log(div);
+  console.log(div);
   
+
+
+
+  let numb = [1, 2, 3, 4, 5];
+
+let sum = numb.reduce((acc, e) => acc + e, 0);
+
+//console.log(sum);
+
+// Find the max number
+
+let top = [10, 5, 25, 8, 30, 15];
+
+let newTop = top.reduce((max, num) => {
+  return num > max ? num : max;
+}, top[0]);
+
+//console.log(newTop);
+
+// shoppint cart
+
+let cart = [
+  { name: "jeans", price: 500 },
+  { name: "shirt", price: 300 },
+  { name: "shoes", price: 1000 },
+  { name: "Hat", price: 100 },
+  { name: "Tshirt", price: 400 },
+];
+
+// reduce()
+let totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
+//console.log(totalPrice);
+
+// filter()
+let some = cart.filter((e) => e.price > 300);
+
+//console.log(some);
+
+
+
+
+
