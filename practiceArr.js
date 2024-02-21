@@ -1,6 +1,6 @@
 
 
-// 4) Manipulate Arrays with push()
+// push()
 
 
 
@@ -24,7 +24,7 @@ console.log(anArray, "\n\n");
 
 
 
-// Manipulate Arrays with pop()
+//  pop()
 
 
 var newArr = [1,2,3,4]
@@ -39,7 +39,7 @@ console.log(removedArr,"\n");
 
 
 
-// Manipulate Arrays with shift()
+// Arrays with shift()
 
 var otherArr = ["stimpson", "J", ["cat"]];
 console.log(otherArr);
@@ -65,7 +65,7 @@ console.log(removedArr, "\n");
 
 
 
-// Manipulate Arrays with shift()
+// Arrays with shift()
 
 
 var anArr = ["James", "Jony", "Paul"]
@@ -80,6 +80,51 @@ console.log(anArr)
 var addArr = anArr.unshift(56)
 console.log(anArr, "\n\n")
 
+
+
+
+///////////////////////////////
+//////////////////////////////
+
+
+
+var aList = [["cereal",3], ["milk", 2], ["juice", 2], ["eggs", 12], 53, "bags" ];
+
+console.log("Main List:- ",aList);
+
+var removeItem = aList.pop()
+console.log("poped List",aList);
+
+var shift = aList.shift();
+console.log("shifted List", aList);
+
+
+var unShift = aList.unshift(["Bananas", 8]);
+console.log("unshifted List", aList);
+
+
+var push = aList.push("Mango", "Orange")
+console.log(aList);
+
+
+
+
+////
+
+// splice()
+
+
+var animals = ["dog", "cat", "bird","horse","cow","bird","pig","fish", "Tiger", "Deer"];
+
+console.log(animals)
+
+
+animals.splice(1,1,"Bear");      // here at indx-1 removing 1 element and adding "Bear" at that place.
+console.log(animals);
+
+// here at from index-2 removing 3 element and adding "Lion","Zebra" at that place.
+var addedAnimal = animals.splice(2,3,"Lion","Zebra")
+console.log("\n",animals,"\n")
 
 
 
