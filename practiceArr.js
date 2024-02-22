@@ -130,3 +130,75 @@ console.log("\n",animals,"\n")
 
 
 
+
+////////////////////////////////
+////////////////////////////////
+
+
+
+
+let frt =[ "apple", "banana", "orange"]
+
+let num = [1,2,3,4];
+
+
+// so here frt [] will concat/ mix with num [], an will create a new arr
+let mixArr = frt.concat(num)
+console.log(mixArr);
+
+
+
+//
+let car = ["Dodge", "Jeep", "Toyota"]
+
+let truck = ["F-150","Semi-truck","Tructor"];
+
+let mixCar = truck.concat(car);
+console.log(mixCar, "\n");
+
+
+
+
+////////////////////////////
+
+
+let color = ["red", "orange", "Green", "Blue", "Purple"]
+
+
+let indxCol = color.indexOf("Green"); 
+console.log(indxCol)// output: 2
+
+let indxCol1 = color.indexOf("Purple"); 
+console.log(indxCol1)// output: 4
+
+
+
+
+let indxCol2 = color.indexOf("white")
+
+console.log(indxCol2) // output:  -1  
+
+
+
+////////////
+
+
+let carElement = ["sedan", "suv","Truck","Bus","Train", "suv", "Plain"]
+
+let mixEle = carElement.indexOf("suv", 3);
+console.log(mixEle);
+
+
+
+//
+let food = ["sandwich","Burger", "wings", "Bread", "sandwich", "cheese"]
+
+
+// we are saying here look for arr element "sandwich", if we have more than one
+// This is the ideal way to look for an element that is twice or more
+let mixFood = food.indexOf("sandwich", food.indexOf("sandwich")+1);
+console.log(mixFood,"\n\n");
+
+
+
+
