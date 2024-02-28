@@ -61,21 +61,109 @@ checkNumber(0);
 
  }
 
- checkGrade(90)
- checkGrade(50)
- checkGrade(75)
+checkGrade(90)
+checkGrade(50)
+checkGrade(75)
+
+
+
+//////
+
+
+// Launch browser condition
+
+function browsers(a){
+
+    //let browser = "chrome";
+
+    if(a === "chrome"){
+
+        console.log("launch chrome")
+
+    }
+
+    else if(a === "edge"){
+
+        console.log("launch edge")
+
+    }
+
+    else if(a === "firefox"){
+
+        console.log("launch firefox")
+
+    }
+    else {
+
+        console.log("plz pass the right browser")
+
+    }
+    
+}
+
+browsers("chrome")
 
 
 
 
 
+// Switch Case condition
 
 
 
+function checkWeekDays(dayNumber){
+
+    let day ;
+
+    switch (dayNumber) {
+        case 0:
+            
+         day = "sunday" ;
+            break;
+    
+        case 1:
+            
+         day = "Monday" ;
+            break;
+    
+        case 2:
+            
+         day = "Tuesday" ;
+            break;
+    
+        case 3:
+            
+         day = "Wednessday" ;
+            break;
+    
+        case 4:
+            
+         day = "Thursday" ;
+            break;
+    
+        case 5:
+            
+         day = "Friday" ;
+            break;
+    
+        case 6:
+            
+         day = "Saturday" ;
+            break;
+    
+        default:
+
+          console.log("Invalid Day");
+
+            break;
+    }
+
+    return day;
+
+}
 
 
-
-
+console.log(checkWeekDays(2));
 
 
 
