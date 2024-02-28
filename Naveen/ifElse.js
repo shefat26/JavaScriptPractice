@@ -164,8 +164,40 @@ function checkWeekDays(dayNumber){
 
 
 console.log(checkWeekDays(2));
+console.log(checkWeekDays(3));
+console.log(checkWeekDays(10));
+
+
+// switch Case Launch browser
 
 
 
+let browser = "chrome"
+
+switch (browser) {
+    case "chrome":
+
+     console.log("launch chrome");
+        
+        break;
+
+
+    case "firefox":
+
+     console.log("launch firefox");
+        
+        break;
+
+    case "edge":
+
+     console.log("launch edge");
+        
+        break;
+
+    default:
+
+     console.log("Please pass the the right browser...")
+        break;
+}
 
 
